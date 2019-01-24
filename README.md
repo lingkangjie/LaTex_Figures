@@ -3,3 +3,9 @@ A collection of common examples for scientific papers especially for Deep Learni
 
 
 ![Cover](./images/cover.jpg)
+
+
+![2D Convolution](./images/2d_conv.jpg)
+
+
+![Variational Denoising AutoEncoder](./images/VDAE.jpg)
