@@ -1,0 +1,247 @@
+% A collection of PGF/TikZ figures for Deep Learning,
+% using a decompossed method to illustrate.
+% Written by Ling KangJie<1815428489@qq.com>
+
+% Reference: https://github.com/PetarV-/TikZ 
+\documentclass{article}
+\usepackage[margin=12mm]{geometry}
+\usepackage{hyperref}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{etoolbox}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{pgfplots}
+\usepackage{braids}
+\usepackage{etoolbox}
+\usepackage{tkz-graph}
+\usepackage{pgfplots}
+\usepackage{amsbsy}
+\usepackage{etoolbox}
+
+\usetikzlibrary{arrows,decorations.pathmorphing,backgrounds,positioning,fit,petri, decorations.pathreplacing,shadows,calc}
+\usetikzlibrary{automata, chains, decorations.pathmorphing, positioning}
+\usepackage{relsize}
+\usetikzlibrary{automata, patterns,positioning}
+\usepackage{bm}
+
+\usepackage{tkz-graph}
+\usetikzlibrary{snakes}
+
+\usetikzlibrary{arrows,backgrounds}
+\usetikzlibrary{positioning, decorations.pathmorphing, shapes}
+\usetikzlibrary{matrix}
+\usetikzlibrary{calc}
+
+
+\definecolor{olivegreen}{rgb}{0,0.6,0}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{listings}
+\usepackage{color}
+\definecolor{listinggray}{gray}{0.92}
+\lstset{ %
+language=[LaTeX]TeX,
+breaklines=true,
+frame=single,
+basicstyle=\footnotesize\ttfamily,
+backgroundcolor=\color{listinggray},
+keywordstyle=\color{blue}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  anchorcolor=black,
+  citecolor=olive,
+  filecolor=magenta,
+  menucolor=red,
+  urlcolor=blue
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\demo}[2][1]{
+\begin{minipage}{.49\linewidth}
+\centering
+\resizebox{#1\linewidth}{!}{
+\input{demo/#2}
+}
+\end{minipage}
+\hspace{0.01\linewidth}
+\begin{minipage}{0.5\linewidth}
+\lstinputlisting{demo/#2}
+\end{minipage}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\example}[1]{
+\resizebox{\linewidth}{!}{
+\input{demo/#1}
+}
+\lstinputlisting{demo/#1}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\title{A Collection of PGF/TikZ Examples for Deep Learning}
+\author{\href{1815428489@qq.com}{Ling KangJie}}
+\date{\today{}~(v0.1.0)}
+\maketitle
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{abstract}
+  This document is a collection of common examples for scientific papers particularly for Deep Learning topics by using PGF/TikZ package.
+Reference: 
+  \href{https://github.com/PetarV-/TikZ}{https://github.com/PetarV-/TikZ}.
+\end{abstract}
+
+\tableofcontents
+
+\section{Deep Learning}
+
+\subsection{2D Convolution Operation}
+\example{2d_convolution}
+\subsection{A3C execution}
+\example{a3c_execution}
+\subsection{A3C Neural Network}
+\example{a3c_neural_network}
+\subsection{Amplitude Modulation}
+\example{amplitude_modulation}
+\subsection{A Trous Convolutions}
+\example{a_trous_convolutions}
+\subsection{Bidirectional Long Short Term Memory}
+\example{bidirectional_long_short-term_memory}
+\subsection{BWT}
+\example{bwt}
+\subsection{Convolutional Autoencoder}
+\example{convolutional_autoencoder}
+\subsection{Convolutional Coross-connection}
+\example{convolutional_cross-connection}
+
+\subsection{Coordinate Systems}
+\example{coordinate_systems}
+\subsection{CRT Rendering}
+\example{crt_rendering}
+\subsection{Cyclegan}
+\example{cyclegan}
+\subsection{Deep Belif Network}
+\example{deep_belief_network}
+\subsection{Deep Graph Infomax}
+\example{deep_graph_infomax}
+\subsection{de-bruijn-graph}
+\example{de_bruijn_graph}
+
+\subsection{DNA}
+\example{dna}
+\subsection{Dropout}
+\example{dropout}
+\subsection{Emulator Modules}
+\example{emulator_modules}
+\subsection{Fetch Decode Execute cycle}
+\example{fetch-decode-execute_cycle}
+
+\subsection{Frequence Modulation}
+\example{frequency_modulation}
+\subsection{Fully Connected Cross Connection}
+\example{fully-connected_cross-connection}
+\subsection{GameBoy Joypad Register}
+\example{gameboy_joypad_register}
+\subsection{Gameboy Palette Translation}
+\example{gameboy_palette_translation}
+\subsection{Gameboy Tiling System}
+\example{gameboy_tiling_system}
+
+\subsection{Gat Layer}
+\example{gat_layer}
+\subsection{Generative Adversarial Network}
+\example{generative_adversarial_network}
+\subsection{Gene Expression}
+\example{gene_expression}
+\subsection{Git Dataflow}
+\example{git_dataflow}
+\subsection{Git WorkFlow}
+\example{git_workflow}
+\subsection{Gamhmm}
+\example{gmhmm}
+\subsection{Graph Convolution}
+\example{graph_convolution}
+\subsection{Hamitonian Graph}
+\example{hamiltonian_graph}
+\subsection{Hierachical Graph Classifier}
+\example{hierarchical_graph_classifier}
+
+\subsection{Hmm Transition Smoothing}
+\example{hmm_transition_smoothing}
+\subsection{Insruction Execution}
+\example{instruction_execution}
+\subsection{IQ Sampling}
+\example{iq_sampling}
+\subsection{Lego Deep Learning}
+\example{lego_deep_learning}
+\subsection{Long Short Term Memory}
+\example{long_short-term_memory}
+\subsection{Maximum Flow Problem}
+\example{maximum_flow_problem}
+\subsection{MCL}
+\example{mcl}
+\subsection{Message Passing Neural Network}
+\example{message_passing_neural_network}
+\subsection{Multilayer Network}
+\example{multilayer_network}
+
+\subsection{Multilayer Perceptron}
+\example{multilayer_perceptron}
+\subsection{Multiplex Chain Gmhmm}
+\example{multiplex_chain_gmhmm}
+\subsection{Multiplex Chain Gmhmm Beta}
+\example{multiplex_chain_gmhmm_beta}
+\subsection{Multiplex Epidemic Awareness Network}
+\example{multiplex_epidemics-awareness_network}
+\subsection{Multiplex Network Underlying Graph}
+\example{multiplex_network_underlying_graph}
+\subsection{Muxstep Pipeline}
+\example{muxstep_pipeline}
+\subsection{Progressive Alignment}
+\example{progressive_alignment}
+\subsection{Progressive Neural Network}
+\example{progressive_neural_network}
+\subsection{Reinforcement Learning Greedy Policy}
+\example{reinforcement_learning_greedy_policy}
+\subsection{Relational Network}
+\example{relational_network}
+\subsection{RN Object Extraction}
+\example{rn_object_extraction}
+\subsection{Sampling}
+\example{sampling}
+
+\subsection{Self-attention}
+\example{self-attention}
+\subsection{Semi-supervised Embedding}
+\example{semi-supervised_embedding}
+\subsection{Semi-supervised Learning}
+\example{semi-supervised_learning}
+\subsection{Shortest Path Problem}
+\example{shortest_path_problem}
+\subsection{Sparse DGI}
+\example{sparse_dgi}
+\subsection{Supervised Learning Setup}
+\example{supervised_learning_setup}
+\subsection{Variational Denoising Autoencoder}
+\example{variational_denoising_autoencoder}
+\subsection{Web Graph}
+\example{web_graph}
+\subsection{X-CNN}
+\example{x-cnn}
+\subsection{X-LSTM}
+\example{x-lstm}
+
+\end{document}
